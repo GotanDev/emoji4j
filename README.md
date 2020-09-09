@@ -16,13 +16,19 @@ Inspired by [vdurmont/emoji-java](https://github.com/vdurmont/emoji-java), emoji
 
 Stable:
 
-```
-<dependency>
-	<groupId>com.kcthota</groupId>
-	<artifactId>emoji4j</artifactId>
-	<version>6.0</version>
-</dependency>
-```
+    <repository>
+	    <id>gotan-os</id>
+	    <name>Gotan OpenSource Contributions</name>
+	    <url>https://repository.dev.gotan.io/repository/gotan.os/</url>
+	</repository>
+	
+	...
+	
+	<dependency>
+      <groupId>io.gotan.os</groupId>
+      <artifactId>emoji4j</artifactId>
+      <version>6.1.1</version>
+    </dependency>
 
 <!--
 Latest Snapshot:

@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.kcthota</groupId>
+	<groupId>io.gotan.os</groupId>
 	<artifactId>emoji4j</artifactId>
-	<version>6.1-SNAPSHOT</version>
+	<version>6.1.1</version>
 	<name>Emoji4j</name>
-	<url>https://github.com/kcthota/emoji4j</url>
+	<url>https://github.com/GotanDev/emoji4j</url>
 	<description>Java library to convert short codes, html entities to emojis and vice-versa</description>
 	<inceptionYear>2015</inceptionYear>
 	<developers>
@@ -15,6 +15,15 @@
 			<email>kcthota at gmail dot com</email>
 			<url>https://github.com/kcthota</url>
 		</developer>
+		<developer>
+			<id>damiencuvillier</id>
+			<name>Damien Cuvillier</name>
+			<email>damien@kpitaine.com</email>
+			<url>https://damiencuvillier.com</url>
+			<roles>
+				<role>simple contributor, packager</role>
+			</roles>
+		</developer>
 	</developers>
 	<licenses>
 		<license>
@@ -23,9 +32,9 @@
 		</license>
 	</licenses>
 	<scm>
-		<connection>scm:git:git://github.com/kcthota/emoji4j.git</connection>
-		<developerConnection>scm:git:git@github.com:kcthota/emoji4j.git</developerConnection>
-		<url>https://github.com/kcthota/emoji4j</url>
+		<connection>scm:git:git://github.com/GotanDev/emoji4j</connection>
+		<developerConnection>scm:git:git@github.com/GotanDev/emoji4j</developerConnection>
+		<url>https://github.com/GotanDev/emoji4j</url>
 	</scm>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -74,10 +83,10 @@
 					<artifactId>maven-compiler-plugin</artifactId>
 					<version>3.8.1</version>
 					<configuration>
-						<source>1.9</source>
-						<target>1.9</target>
-						<testSource>1.9</testSource>
-						<testTarget>1.9</testTarget>
+						<source>1.8</source>
+						<target>1.8</target>
+						<testSource>1.8</testSource>
+						<testTarget>1.8</testTarget>
 					</configuration>
 				</plugin>
 				<plugin>
@@ -120,14 +129,13 @@
 
 		</pluginManagement>
 	</build>
+
 	<distributionManagement>
-		<snapshotRepository>
-			<id>ossrh</id>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-		</snapshotRepository>
 		<repository>
-			<id>ossrh</id>
-			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+			<id>io.gotan.repository</id>
+			<name>Gotan Libraries</name>
+			<url>https://repository.dev.gotan.io/repository/gotan.os/</url>
 		</repository>
 	</distributionManagement>
+
 </project>
